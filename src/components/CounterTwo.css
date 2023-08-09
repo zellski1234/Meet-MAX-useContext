@@ -1,0 +1,75 @@
+/* Counter container */
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Counter styling */
+.counter {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.counter-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.counter-value {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Reset button styling */
+.reset-button {
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+/* ... Your existing styles ... */
+
+/* Action button styling for incrementing */
+.increment-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.increment-button:hover {
+    background-color: #45a049;
+}
+
+/* Action button styling for decrementing */
+.decrement-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.decrement-button:hover {
+    background-color: #d32f2f;
+}
