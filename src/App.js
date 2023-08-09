@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import ComponentC from './components/ComponentC';
 
@@ -8,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider value={'Vishwas'}>
-        <ChannelContext.provider value={'Codevolution'}>
+        <ChannelContext.Provider value={'Codevolution'}>
           <ComponentC />    
-        </ChannelContext.provider>
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
