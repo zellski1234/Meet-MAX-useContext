@@ -3,9 +3,14 @@ import { UserContext } from '../App'
 function ComponentF() {
   return (
     <div>
-        <UserContext> 
-            
-        </UserContext>
+        <UserContext.Consumer> 
+            {
+                user => {
+                    return <div> User context value {user} </div>
+                }
+            }
+
+        </UserContext.Consumer>
     </div>
   )
 }
