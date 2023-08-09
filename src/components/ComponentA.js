@@ -1,13 +1,9 @@
 import React from 'react'
-import ComponentE from './ComponentE'
 
-function ComponentC() {
+function ComponentA() {
   return (
-    <div>
-        ComponentC
-        <ComponentE />
-    </div>
+    <div>ComponentA</div>
   )
 }
 
-export default ComponentC
+export default ComponentA
