@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 
-function DocTitleOne() {
+function DocTitleTwo() {
     const [count, setCount] = useState(0)
-    
-    useDocumentTitle(count)
 
+    useDocumentTitle(count)
   return (
     <div>
         <button onClick={() => setCount(count + 1)}>Count: {count} </button>
@@ -15,4 +14,4 @@ function DocTitleOne() {
 
 
 
-export default DocTitleOne
+export default DocTitleTwo
