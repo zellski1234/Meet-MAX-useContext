@@ -1,12 +1,12 @@
 import React, { useReducer } from 'react'
 import './App.css';
-import ComponentC from './components/ComponentA';
+import ComponentC from './components/ComponentC';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
 
 export const CountContext = React.createContext()
 
-const intialState = 0
+const initialState = 0
 const reducer = (state, action) =>{
     switch (action) {
         case 'increment':
@@ -14,7 +14,7 @@ const reducer = (state, action) =>{
         case 'decrement':
             return state - 1            
         case 'reset':
-            return intialState         
+            return initialState         
         default:
             return state
     }
@@ -24,7 +24,7 @@ const reducer = (state, action) =>{
 
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, intialState)
+  const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <CountContext.Provider 
     value={{ countState: count, countDispatch: dispatch }}
